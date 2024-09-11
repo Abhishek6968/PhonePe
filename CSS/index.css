@@ -1,0 +1,205 @@
+.top{
+    background-image: url('../images/phonepe-purple.png'); /* Path to your image */
+    background-size: cover; /* Makes the image cover the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    height: 80vh; /* Set the height, 100vh covers the full viewport height */
+ 
+}
+/* Apply the background image to the navbar */
+#title .top .navbar {
+    background-image: url('../images/phonepe-purple.png'); /* Correct the path based on your folder structure */
+    background-size: cover; /* Ensure the background covers the entire navbar */
+    background-position: center; /* Center the background image */
+}
+
+.feature-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.spacer {
+    margin-bottom: 30px;
+}
+
+.end {
+    text-align: center; /* Center text inside the section */
+    padding: 30px; /* Add some padding around the section */
+    background-color: #f9f9f9; /* Light background for better readability */
+}
+
+.end h2 {
+    font-size: 24px; /* Appropriate font size */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 20px; /* Space between heading and image */
+}
+
+.end img {
+    display: inline-block; /* Ensures all images stay inline */
+    margin: 20px 10px; /* Add margin between images */
+}
+
+.end p {
+    font-size: 18px; /* Adjust font size for the quote */
+    font-style: italic; /* Italicize the quote */
+    margin-top: 10px; /* Space above the author's name */
+}
+
+.end img:first-of-type {
+    width: 100px; /* Set width for Barack Obama's image */
+    height: 100px; /* Set height for Barack Obama's image */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image fits within the circle */
+}
+
+.press-img {
+    width: 150px; /* Width for press logos */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 15px; /* Add margin between press logos */
+}
+
+/* For responsiveness: Reduce press logo sizes on smaller screens */
+@media (max-width: 600px) {
+    .press-img {
+        width: 100px;
+        margin: 10px;
+    }
+}
+.second {
+    padding: 50px 0; /* Adds padding to the top and bottom */
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center; /* Center-aligns all text in the section */
+}
+
+.feature-box {
+    margin-bottom: 30px; /* Adds space between the boxes */
+    padding: 20px;
+    background-color: #fff; /* Adds a white background to the boxes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.feature-box img {
+    width: 80px; /* Uniform size for icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between the icon and heading */
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    margin-bottom: 15px; /* Space between heading and paragraph */
+    font-weight: bold;
+}
+
+.feature-box p {
+    font-size: 16px;
+    color: #666; /* Slightly darker text color */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .feature-box {
+        margin-bottom: 20px;
+    }
+}
+
+/* Background and padding for the colored section */
+.colored-section {
+    color: #fff; /* White text color */
+    padding: 50px 0; /* Top and bottom padding */
+}
+
+/* Navbar styling */
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar-light .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+.navbar-light .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Responsive hero section */
+.big-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .big-heading {
+        font-size: 2.5rem;
+    }
+}
+
+/* Download buttons styling */
+.download-button {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.download-button ion-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.btn-dark {
+    background-color: #000;
+    border: none;
+}
+
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* iPhone mockup styling */
+.image-iphone {
+    width: 100%;
+    max-width: 400px;
+    transform: rotate(30deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-iphone:hover {
+    transform: rotate(0deg); /* Rotate back to default on hover */
+}
+
+/* Aligning content on small screens */
+@media (max-width: 768px) {
+    .top .container {
+        text-align: center;
+    }
+
+    .big-heading {
+        font-size: 2.2rem;
+    }
+
+    .image-iphone {
+        max-width: 300px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
